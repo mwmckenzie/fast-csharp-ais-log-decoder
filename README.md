@@ -47,30 +47,36 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 ### 'First-Pass' Processing Time
 
-![image](https://user-images.githubusercontent.com/57882845/192135224-77b7f92e-be66-4a9f-adc5-2672e58258e9.png)
+<img src="https://user-images.githubusercontent.com/57882845/192135224-77b7f92e-be66-4a9f-adc5-2672e58258e9.png" width="400">
+</img>
 
 ### Reference Dictionaries Building
 
 #### MMSI Dictionaries
 
-![image](https://user-images.githubusercontent.com/57882845/192135268-7327d67f-a8b3-4c52-86d9-4abba4bd489e.png)
+<img src="https://user-images.githubusercontent.com/57882845/192135224-77b7f92e-be66-4a9f-adc5-2672e58258e9.png" width="400">
+</img>
 
 #### Epoch Dictionary
 
-![image](https://user-images.githubusercontent.com/57882845/192135320-6902e18a-cbed-4a4f-aa57-bae1cc6dc2d2.png)
+<img src="https://user-images.githubusercontent.com/57882845/192135320-6902e18a-cbed-4a4f-aa57-bae1cc6dc2d2.png" width="400">
+</img>
 
 #### All Dictionaries
 
-![image](https://user-images.githubusercontent.com/57882845/192135357-c9667e8f-3801-404a-8151-cacce74a4ca8.png)
+<img src="https://user-images.githubusercontent.com/57882845/192135357-c9667e8f-3801-404a-8151-cacce74a4ca8.png" width="400">
+</img>
 
 ### Helper Builds
 
-![image](https://user-images.githubusercontent.com/57882845/192135394-e9677f4b-5eda-4b43-b412-e1ab3d755d14.png)
+<img src="https://user-images.githubusercontent.com/57882845/192135394-e9677f4b-5eda-4b43-b412-e1ab3d755d14.png" width="400">
+</img>
 
 
 ### 'Second-Pass' Processing Time
 
-![image](https://user-images.githubusercontent.com/57882845/192135412-1735bb5d-4650-40a0-934d-fd4a3fde4373.png)
+<img src="https://user-images.githubusercontent.com/57882845/192135412-1735bb5d-4650-40a0-934d-fd4a3fde4373.png" width="400">
+</img>
 
 
 
