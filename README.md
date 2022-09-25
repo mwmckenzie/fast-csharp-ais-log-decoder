@@ -113,6 +113,7 @@ Format: MMSI, Msg ID, Repeat Binary, Binary Segment, Remaing Payload (6-Bit Asci
     247066850,1,00,0000,P0NPfF98I4r3nfOv02@0H,28/02/2022 00:00:00
     538006934,1,00,0000,1030`c5@IAkooGpa00D1?,28/02/2022 00:00:00
 
+> Note: Only partial payload is left to decode (column 5)
 
 ### Test Conditions
 
