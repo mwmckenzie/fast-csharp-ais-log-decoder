@@ -23,6 +23,14 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 > Note: Relevant processing info currently only 'payload' and 'epoch'
 
+#### Ingests Raw Log Line
+> Example: !AIVDM,1,1,,B,13k8ff0wh0Pfp9TI65`Vk7gl2<0t,0*21,1646006400
+
+#### Exports Only Line Data With Valid Payload and Epoch
+> Example: 13cnPQ?P1KPf7DBI5O7CK?vb2<12,1646074221
+- Payload checked for min length (28 char)
+- Epoch checked for min length (10 char)
+
 ### Build Reference Dictionaries
 
 ### Build Helper Dictionaries 
@@ -85,5 +93,3 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 </img>
 
 
-
-### Overall Processing Time
