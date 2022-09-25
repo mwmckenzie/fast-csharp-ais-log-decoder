@@ -48,6 +48,12 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 - Extracts Repeat Binary Vals (00, 01, 10, 11)
 - Appends leftover binary data
 
+> MMSI Dictionary Example: 254947000
+
+- Format: MMSI (key)
+- Faster version of a simple list
+- Allows for easy expansion later if need arises for a lookup by MMSI
+
 ### Build Helper Dictionaries 
 
 - Only run as a seperate/stand-alone process for testing and timing observations
