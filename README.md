@@ -1,1 +1,1 @@
-# fast-csharp-ais-log-decoder
+# Fast C# AIS Log Decoder
