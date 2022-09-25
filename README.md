@@ -71,6 +71,20 @@ Application and script structure and syntax is still quite rough and no attempt 
 
 ## Results
 
+### Current Final Output Structure
+
+Format: MMSI, Msg ID, Repeat Binary, Binary Segment, Remaing Payload (6-Bit Ascii), Date/Time
+
+#### Example Extract from Final Log Conversion:
+
+    254947000,1,00,0000,wh0Pfp9TI65`Vk7gl2<0t,28/02/2022 00:00:00
+    538007404,1,00,0000,02mPdn@pHIg@=GJon06sd,28/02/2022 00:00:00
+    247380270,18,00,0000,008;?q46Ci?;Q3wTUoP06,28/02/2022 00:00:00
+    477076700,1,00,0000,00HPdgr`HhuA2dR5n0@06,28/02/2022 00:00:00
+    247066850,1,00,0000,P0NPfF98I4r3nfOv02@0H,28/02/2022 00:00:00
+    538006934,1,00,0000,1030`c5@IAkooGpa00D1?,28/02/2022 00:00:00
+
+
 ### Test Conditions
 
 #### Two raw AIS Log files
