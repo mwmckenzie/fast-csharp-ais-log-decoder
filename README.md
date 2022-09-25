@@ -55,11 +55,15 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 ### Full Process Time
 
+> Time: approx 4.4 sec
+
 <img src="https://user-images.githubusercontent.com/57882845/192136175-451b1553-83cc-417e-94f1-80c86b6f66b5.png" width="400">
 </img>
 
 
 ### 'First-Pass' Processing Time
+
+> Time: approx 1.9 sec
 
 <img src="https://user-images.githubusercontent.com/57882845/192135224-77b7f92e-be66-4a9f-adc5-2672e58258e9.png" width="400">
 </img>
@@ -68,26 +72,36 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 #### MMSI Dictionaries
 
-<img src="https://user-images.githubusercontent.com/57882845/192135224-77b7f92e-be66-4a9f-adc5-2672e58258e9.png" width="400">
+> Time: approx 4.4 sec
+
+<img src="https://user-images.githubusercontent.com/57882845/192136605-552a5b77-0509-488e-a6a3-e7f8b772c00c.png" width="400">
 </img>
 
 #### Epoch Dictionary
+
+> Time: approx 0.8 sec
 
 <img src="https://user-images.githubusercontent.com/57882845/192135320-6902e18a-cbed-4a4f-aa57-bae1cc6dc2d2.png" width="400">
 </img>
 
 #### All Dictionaries
 
+> Time: approx 1.0 sec
+
 <img src="https://user-images.githubusercontent.com/57882845/192135357-c9667e8f-3801-404a-8151-cacce74a4ca8.png" width="400">
 </img>
 
 ### Helper Builds
+
+> Time: approx 0.1 sec
 
 <img src="https://user-images.githubusercontent.com/57882845/192135394-e9677f4b-5eda-4b43-b412-e1ab3d755d14.png" width="400">
 </img>
 
 
 ### 'Second-Pass' Processing Time
+
+> Time: approx 1.4 sec
 
 <img src="https://user-images.githubusercontent.com/57882845/192135412-1735bb5d-4650-40a0-934d-fd4a3fde4373.png" width="400">
 </img>
