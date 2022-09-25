@@ -34,3 +34,15 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 - Replace Values from First Pass Results with Dictionary Lookups
 - Save
+
+
+## Results
+
+### Test Conditions
+
+#### Two raw AIS Log files
+- Log 1: 779k lines
+- Log 2: 737k lines
+- Total lines: 1.516m lines
+
+### Overall Processing Time
