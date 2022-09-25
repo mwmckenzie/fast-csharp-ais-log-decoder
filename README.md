@@ -40,6 +40,7 @@ Original methodology
 - Roughly, calculations = n * cf * cpf
 
 Example
+
         1 bil log lines
         12 fields that require conversion
         10 fields that require two separate conversions (6-bit to binary and binary to decimal, for instance)
