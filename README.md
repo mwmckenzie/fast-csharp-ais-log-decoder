@@ -72,7 +72,7 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 #### MMSI Dictionaries
 
-> Time: approx 4.4 sec
+> Time: approx 0.2 sec
 
 <img src="https://user-images.githubusercontent.com/57882845/192136605-552a5b77-0509-488e-a6a3-e7f8b772c00c.png" width="400">
 </img>
