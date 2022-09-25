@@ -36,11 +36,11 @@ Arrange pipeline to:
 
 - Conversion processing will only be O(n) for where n is the unique value count
 - This is compared to O(n) where n is the number of records
-- Speed improves as the ratio of redundent records per conversion type increases (for example, and avergage of 10, 100, or 1000 records per MMSI value)
+- Speed improves (relative to a 'convert by record' approach) as the ratio of redundent records per conversion type increases (for example, an average of 10, 100, or 1000 records per MMSI or Epoch value)
 
 ### Replacement and Filtering Search Efficiency
 
-- Lookup value search will be O(1) search time per replacement or filter check
+- Lookup value search will be O(1) search time per replacement or filter
 - This is achieved via use of hash-tables/dictionaries for all (appropriate) lookup functions
 
 ### In-Stride Database Creation
