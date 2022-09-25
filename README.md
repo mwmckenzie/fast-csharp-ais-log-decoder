@@ -45,6 +45,12 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 - Log 2: 737k lines
 - Total lines: 1.516m lines
 
+### Full Process Time
+
+<img src="https://user-images.githubusercontent.com/57882845/192136175-451b1553-83cc-417e-94f1-80c86b6f66b5.png" width="400">
+</img>
+
+
 ### 'First-Pass' Processing Time
 
 <img src="https://user-images.githubusercontent.com/57882845/192135224-77b7f92e-be66-4a9f-adc5-2672e58258e9.png" width="400">
