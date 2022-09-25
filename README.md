@@ -12,7 +12,11 @@ The console application has four primary processes, controlled via bool settings
 
 ## Status
 
+For demonstration and sharing of ideas/concepts only (at least at the current stage of development).
+
 Basic functionality is complete and generally satisfies tests for valid output, as well as generally meeting goals for processing speed.
+
+Application and script structure and syntax is still quite rough and no attempt has been made to produce 'finished' or 'final' code. There is quite a bit of redundant and unoptimized code throughout and is in need of quite a bit of refactoring.
 
 ## Primary Application Processes
 
