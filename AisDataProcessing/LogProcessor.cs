@@ -1,4 +1,4 @@
-﻿// Created by: Matthew McKenzie, September 2022
+// Created by: Matthew McKenzie, September 2022
 // Method 'Ascii2Ais' posted by user: https://www.codeproject.com/script/Membership/View.aspx?mid=3196973
 // Method 'Ascii2Ais' posted on website: https://www.codeproject.com/Questions/288924/Convert-8bit-ASCII-to-6bit
 
@@ -12,12 +12,15 @@ public static class LogProcessor {
     public static bool TryFirstPassProcess(string path, string filename, 
         int? filterByEpochBefore = null, int? filterByEpochAfter = null) {
 
+        var watch = new System.Diagnostics.Stopwatch();
+        watch.Start();
+        
         var records = new List<AisLogLineDataTrunc>();
         string[] lineArr;
         
         using (var sr = new StreamReader(
                    $"{path}/Resources/{filename}")) {
-            while (sr.ReadLine() is { } line) // && linesRead < 100)
+            while (sr.ReadLine() is { } line)
             {
                 lineArr = line.Split(',');
                 var record = new AisLogLineDataTrunc(lineArr);
@@ -45,6 +48,12 @@ public static class LogProcessor {
         }
 
         Console.WriteLine($"Number of valid records: {records.Count}");
+        
+        watch.Stop();
+        Console.WriteLine($"TryFirstPassProcess Process Execution Time: {watch.ElapsedMilliseconds} ms");
+            
+        watch = new System.Diagnostics.Stopwatch();
+        watch.Start();
 
         using (var streamWriter = new StreamWriter(
                    $"{path}/Processed/firstPassResults_{filename.Split('.')[0]}.txt")) {
@@ -53,12 +62,18 @@ public static class LogProcessor {
                 streamWriter.WriteLine(record.ToString());
             }
         }
+        
+        watch.Stop();
+        Console.WriteLine($"TryFirstPassProcess Write Execution Time: {watch.ElapsedMilliseconds} ms");
 
         return true;
     }
 
     public static bool BuildEpochDictionary(string path, int index) {
 
+        var watch = new System.Diagnostics.Stopwatch();
+        watch.Start();
+        
         var epochDict = new Dictionary<string, string>();
 
         foreach (var filepath in Directory.GetFiles(path)) {
@@ -75,16 +90,29 @@ public static class LogProcessor {
         }
 
         Console.WriteLine($"Number of unique epochs: {epochDict.Count}");
-        if (epochDict.Count < 1) { return false; }
-
+        watch.Stop();
+        Console.WriteLine($"BuildEpochDictionary Process Execution Time: {watch.ElapsedMilliseconds} ms");
+        
+        if (epochDict.Count < 1) { return false; }   
+        
+        watch = new System.Diagnostics.Stopwatch();
+        watch.Start();
+        
         using var streamWriter = new StreamWriter($"{path}/epochDictionary.txt");
         foreach (var epochKvp in epochDict) {
             streamWriter.WriteLine($"{epochKvp.Key},{epochKvp.Value}");
         }
+        
+        watch.Stop();
+        Console.WriteLine($"BuildEpochDictionary Write Execution Time: {watch.ElapsedMilliseconds} ms");
+        
         return true;
     }
     
     public static bool BuildMmsiDictionary(string path, int index) {
+        
+        var watch = new System.Diagnostics.Stopwatch();
+        watch.Start();
 
         var mmsiBinDict = new Dictionary<string, string>();
         var mmsiDict = new Dictionary<string, string>();
@@ -118,7 +146,13 @@ public static class LogProcessor {
         }
 
         Console.WriteLine($"Number of unique mmsi 6-bit binary values: {mmsiBinDict.Count}");
+        watch.Stop();
+        Console.WriteLine($"BuildMmsiDictionary Process Execution Time: {watch.ElapsedMilliseconds} ms");
+        
         if (mmsiBinDict.Count < 1) { return false; }
+        
+        watch = new System.Diagnostics.Stopwatch();
+        watch.Start();
 
         using var streamWriter = new StreamWriter($"{path}/mmsiBinDictionary.txt");
         foreach (var valuePair in mmsiBinDict) {
@@ -130,6 +164,10 @@ public static class LogProcessor {
         foreach (var valuePair in mmsiDict) {
             streamWriter2.WriteLine(valuePair.Key); // $"{valuePair.Key},{valuePair.Value}");
         }
+        
+        watch.Stop();
+        Console.WriteLine($"BuildMmsiDictionary Write Execution Time: {watch.ElapsedMilliseconds} ms");
+        
         return true;
     }
     
@@ -163,6 +201,9 @@ public static class LogProcessor {
             
             if (!filepath.Contains("firstPassResults")) { continue; }
             
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            
             var lineList = new List<string>();
             var filenameOut = Path.GetFileName(filepath).Replace(
                 "firstPassResults", "secondPassResults");
@@ -187,10 +228,19 @@ public static class LogProcessor {
                 lineList.Add(stringbuilder.ToString());
             }
             
+            watch.Stop();
+            Console.WriteLine($"TryProcessSecondPass Process Execution Time: {watch.ElapsedMilliseconds} ms");
+            
+            watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            
             using var streamWriter = new StreamWriter($"{processedFldrPath}/{filenameOut}");
             foreach (var newLine in lineList) {
                 streamWriter.WriteLine(newLine);
             }
+            
+            watch.Stop();
+            Console.WriteLine($"TryProcessSecondPass Write Execution Time: {watch.ElapsedMilliseconds} ms");
         }
 
         return true;
