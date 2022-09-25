@@ -148,11 +148,10 @@ Format: MMSI, Msg ID, Repeat Binary, Binary Segment, Remaing Payload (6-Bit Asci
 
 ### Full Process Time
 
-> Time: approx 4.4 sec
+> Time: approx 3.3 sec
 
-<img src="https://user-images.githubusercontent.com/57882845/192136175-451b1553-83cc-417e-94f1-80c86b6f66b5.png" width="400">
+<img src="https://user-images.githubusercontent.com/57882845/192149026-4057834c-0bb4-4466-816e-6bc797642665.png" width="400">
 </img>
-
 
 ### 'First-Pass' Processing Time
 
