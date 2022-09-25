@@ -33,6 +33,10 @@ Arrange pipeline to:
 
 - A beneficial side-effect of the prior processes are databases created through the use of serialized lookup dictionaries/tables
 
+### Fast-Filtering Can be Appended After Every Stage
+
+- Use the work of the prior stage/process to further filter/refine the data being passed forward to further reduce downstream processing time
+
 ## Description
 
 This test project is built as a C# console application.
