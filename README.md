@@ -33,6 +33,18 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 ### Build Reference Dictionaries
 
+#### Epoch Dictionary
+
+> Example: 1646006400,28/02/2022 00:00:00
+
+#### MMSI Dictionaries
+
+> MMSI Binary Dictionary Example: 13k8ff0,254947000,1,00,0000
+
+- Decodes MMSI, Msg ID
+- Extracts Repeat Binary Vals
+> 00, 01, 10, 11
+
 ### Build Helper Dictionaries 
 
 - Only run as a seperate/stand-alone process for testing and timing observations
