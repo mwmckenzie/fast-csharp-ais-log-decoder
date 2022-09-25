@@ -37,13 +37,16 @@ Basic functionality is complete and generally satisfies tests for valid output, 
 
 > Example: 1646006400,28/02/2022 00:00:00
 
+- Format: Epoch (key), Day/Month/Year HH:MM:SS
+
 #### MMSI Dictionaries
 
 > MMSI Binary Dictionary Example: 13k8ff0,254947000,1,00,0000
 
+- Format: Binary Segment (key), MMSI, Msg ID, Repeat Binary, Remaining Binary from Segment
 - Decodes MMSI, Msg ID
-- Extracts Repeat Binary Vals
-> 00, 01, 10, 11
+- Extracts Repeat Binary Vals (00, 01, 10, 11)
+- Appends leftover binary data
 
 ### Build Helper Dictionaries 
 
