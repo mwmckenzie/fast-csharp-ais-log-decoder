@@ -1,0 +1,15 @@
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\bin\Debug\net6.0\AisDataProcessing.exe
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\bin\Debug\net6.0\AisDataProcessing.deps.json
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\bin\Debug\net6.0\AisDataProcessing.runtimeconfig.json
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\bin\Debug\net6.0\AisDataProcessing.dll
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\bin\Debug\net6.0\AisDataProcessing.pdb
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.csproj.AssemblyReference.cache
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.AssemblyInfoInputs.cache
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.AssemblyInfo.cs
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.dll
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\refint\AisDataProcessing.dll
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.pdb
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\AisDataProcessing.genruntimeconfig.cache
+C:\Users\Matt\RiderProjects\AisDataProcessing\AisDataProcessing\obj\Debug\net6.0\ref\AisDataProcessing.dll
