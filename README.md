@@ -4,6 +4,35 @@
 
 This project builds on a series of efforts to increase the speed and efficiency of processing large amounts of raw AIS log data.
 
+## Design
+
+Arrange pipeline to:
+- Flag invalid records on read where validity can be checked without calculation/conversion
+- Filter first by invalid records
+- Then filter by any other values that do not need conversion or calculation
+- Find unique values to convert
+- Create lookups for conversion
+- Convert values only once
+- Replace values in original records with conversions or calculations using hash-table/dictionary retrieval
+
+
+## Benefits 
+
+### Conversion Calculation Efficiency
+
+- Conversion processing will only be O(n) for where n is the unique value count
+- This is compared to O(n) where n is the number of records
+- Speed improves as the ratio of redundent records per conversion type increases (for example, and avergage of 10, 100, or 1000 records per MMSI value)
+
+### Replacement and Filtering Search Efficiency
+
+- Lookup value search will be O(1) search time per replacement or filter check
+- This is achieved via use of hash-tables/dictionaries for all (appropriate) lookup functions
+
+### In-Stride Database Creation
+
+- A beneficial side-effect of the prior processes are databases created through the use of serialized lookup dictionaries/tables
+
 ## Description
 
 This test project is built as a C# console application.
