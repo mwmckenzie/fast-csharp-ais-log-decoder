@@ -32,10 +32,21 @@ Arrange pipeline to:
 
 ## Benefits 
 
-### Conversion Calculation Efficiency
+### Conversion Calculation Efficiency Improvements
 
-- Conversion processing will only be O(n) for where n is the unique value count
-- This is compared to O(n) where n is the number of records
+Original methodology
+- Full conversion of the log line
+- Calculations required were O(n) where n is the number of log lines multiplied by the number of fields that require conversion (cf) multiplied by the number of conversions needed per field (cpf) to achieve desired end state
+- Roughly, calculations = n * cf * cpf
+
+Example
+        1 bil log lines
+        12 fields that require conversion
+        10 fields that require two separate conversions (6-bit to binary and binary to decimal, for instance)
+        = 120 bil calculations
+
+Improved Methodology
+- Improved conversion processing will be O(n) where n is the unique value count
 - Speed improves (relative to a 'convert by record' approach) as the ratio of redundent records per conversion type increases (for example, an average of 10, 100, or 1000 records per MMSI or Epoch value)
 
 ### Replacement and Filtering Search Efficiency
