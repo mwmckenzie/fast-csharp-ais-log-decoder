@@ -95,11 +95,19 @@ Arrange pipeline to:
 
 - Only run as a seperate/stand-alone process for testing and timing observations
 - Helper objects contain dictionaries for replacement lookups in later steps/processes
+- Generally match the serialized dictionary files, though these can be optimized as needed in the helpers for specific functions/needs
 
 ### 'Second Pass' Processing
 
-- Replace Values from First Pass Results with Dictionary Lookups
-- Save
+> Example: 254947000,1,00,0000,wh0Pfp9TI65`Vk7gl2<0t,28/02/2022 00:00:00
+
+- Format: MMSI, Msg ID, Repeat Binary, Binary Segment, Remaing Payload (6-Bit Ascii), Date/Time
+- Ingests 'first-pass' processed log lines
+- Performs a fast hash-table replacement for the first 6 chars of the payload
+- Performs a fast hash-table replacement for the epoch 
+- Appends MMSI, Msg ID, Repeat Binary, and converted Binary Segment to the remaining payload characters (removes the initial 6)
+- Appends the Date/Time
+- Saves new log lines
 
 
 ## Results
