@@ -4,6 +4,20 @@
 
 This project builds on a series of efforts to increase the speed and efficiency of processing large amounts of raw AIS log data.
 
+## Description
+
+This test project is built as a C# console application.
+
+The console application has four primary processes, controlled via bool settings in [program.cs](https://github.com/mwmckenzie/fast-csharp-ais-log-decoder/blob/main/AisDataProcessing/Program.cs). There is a built-in stopwatch functionality which prints the total run-time to the console after every successful application execution.
+
+## Status
+
+For demonstration and sharing of ideas/concepts only (at least at the current stage of development).
+
+Basic functionality is complete and generally satisfies tests for valid output, as well as generally meeting goals for processing speed.
+
+Application and script structure and syntax is still quite rough and no attempt has been made to produce 'finished' or 'final' code. There is quite a bit of redundant and unoptimized code throughout and is in need of quite a bit of refactoring.
+
 ## Design
 
 Arrange pipeline to:
@@ -36,20 +50,6 @@ Arrange pipeline to:
 ### Fast-Filtering Can be Appended After Every Stage
 
 - Use the work of the prior stage/process to further filter/refine the data being passed forward to further reduce downstream processing time
-
-## Description
-
-This test project is built as a C# console application.
-
-The console application has four primary processes, controlled via bool settings in [program.cs](https://github.com/mwmckenzie/fast-csharp-ais-log-decoder/blob/main/AisDataProcessing/Program.cs). There is a built-in stopwatch functionality which prints the total run-time to the console after every successful application execution.
-
-## Status
-
-For demonstration and sharing of ideas/concepts only (at least at the current stage of development).
-
-Basic functionality is complete and generally satisfies tests for valid output, as well as generally meeting goals for processing speed.
-
-Application and script structure and syntax is still quite rough and no attempt has been made to produce 'finished' or 'final' code. There is quite a bit of redundant and unoptimized code throughout and is in need of quite a bit of refactoring.
 
 ## Primary Application Processes
 
